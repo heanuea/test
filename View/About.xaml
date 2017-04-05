@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="App2.View.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="#151E29">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock x:Name="txtTitle" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Info" Foreground="White" FontWeight="Bold"
+                               TextWrapping="Wrap" FontSize="40" TextAlignment="Center" RenderTransformOrigin="-0.525,0.604" Margin="10,0,225,-1"/>
+            </Grid>
+            
+            
+            <Grid Grid.Row="1">
+                <TextBlock x:Name="txtAbout" VerticalAlignment="Center" Margin="0 20 0 0" HorizontalAlignment="Center" Text="Test your maths skills against time " Foreground="White" FontWeight="Bold"
+                               TextWrapping="Wrap" FontSize="20" TextAlignment="Center"/>
+                <TextBlock x:Name="txtAbout2" VerticalAlignment="Center" Margin="0 60 0 0" HorizontalAlignment="Center" Text="" Foreground="White" FontWeight="Bold"
+                               TextWrapping="Wrap" FontSize="20" TextAlignment="Center"/>
+            </Grid>
+            
+            
+            <Grid Grid.Row="2">
+                <TextBlock x:Name="txtAbout3" VerticalAlignment="Center" Margin="0 60 0 0" HorizontalAlignment="Center" Text="Hope you enjoy " Foreground="White" FontWeight="Bold"
+                               TextWrapping="Wrap" FontSize="20" TextAlignment="Center"/>
+            </Grid>
+
+       
+
+            <Grid Grid.Row="3">
+                <Button x:Name="btnBack" BorderBrush="#1B2737" BorderThickness="1" Margin="3,279,2,-199" Background="#1D8DEE" Content="BACK"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="Bold" FontSize="30" Click="btnBack_Click" Width="355"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
